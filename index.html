@@ -6,69 +6,103 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Construcciones GASA</title>
+<title>Construcciones GASA | Ingeniería Civil y Construcción</title>
 
 <style>
+
+*{
+
+box-sizing:border-box;
+
+}
 
 body{
 
 margin:0;
 
 font-family:Arial,sans-serif;
-
-background:#f5f9fc;
+background:#f4f7fa;
 
 color:#18324a;
-
-text-align:center;
 
 }
 
 header{
 
-background:#ffffff;
+background:white;
 
 padding:25px 20px;
 
-box-shadow:0 2px 12px rgba(0,0,0,.08);
+text-align:center;
+
+box-shadow:0 2px 12px rgba(0,0,0,.10);
 
 }
 
 header img{
 
-display:block;
+width:180px;
 
-width:220px;
+max-width:80%;
 
 height:auto;
 
-margin:0 auto 15px;
-
 }
 
-h1{
+header h1{
 
 color:#0b3558;
 
-margin:10px 0;
+margin:10px 0 5px;
 
 }
 
+header p{
+
+color:#555;
+
+margin:5px;
+
+}
+
+nav{
+
+background:#0b3558;
+
+padding:15px;
+
+text-align:center;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 8px;
+
+font-weight:bold;
+
+}  
 .hero{
 
 background:linear-gradient(135deg,#0b3558,#17679b);
 
 color:white;
 
-padding:70px 20px;
+text-align:center;
+
+padding:80px 20px;
 
 }
 
 .hero h2{
 
-font-size:34px;
+font-size:38px;
 
 margin:0 0 15px;
 
@@ -76,43 +110,29 @@ margin:0 0 15px;
 
 .hero p{
 
-font-size:18px;
+font-size:19px;
+
+max-width:650px;
+
+margin:0 auto 25px;
 
 }
 
 .btn{
 
-background:#d9a928;
-
-color:#ffffff;
-
-padding:15px 25px;
-
 display:inline-block;
 
-text-decoration:none;
+background:#d9a928;
+
+color:white;
+
+padding:15px 28px;
 
 border-radius:8px;
 
+text-decoration:none;
+
 font-weight:bold;
-
-margin-top:15px;
-
-}
-
-section{
-
-padding:45px 20px;
-
-}
-
-section h2{
-
-color:#0b3558;
-
-font-size:28px;
-
-margin-bottom:25px;
 
 }
 
@@ -122,144 +142,331 @@ display:grid;
 
 grid-template-columns:repeat(2,1fr);
 
-gap:18px;
+gap:20px;
 
-padding:20px;
+max-width:1100px;
+
+margin:auto;
+
+padding:30px 20px;
 
 }
 
-.proyectos img{
+.proyecto{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 18px rgba(0,0,0,.12);
+
+}
+
+.proyecto img{
 
 width:100%;
 
-border-radius:14px;
+height:230px;
 
-box-shadow:0 4px 15px rgba(0,0,0,.12);
+object-fit:cover;
+
+display:block;
 
 }
 
-footer{
+.proyecto h3{
 
-background:#0b3558;
+color:#0b3558;
 
-color:white;
+margin:15px 10px 8px;
 
-padding:25px 15px;
 }
-</style>
-  .proyectos{
+
+.proyecto p{
+
+color:#666;
+
+margin:0 10px 18px;
+
+}
+.servicios{
 
 display:grid;
 
 grid-template-columns:repeat(2,1fr);
 
-gap:15px;
+gap:20px;
+
+max-width:900px;
+
+margin:auto;
 
 padding:20px;
 
 }
 
-.proyectos img{
+.card{
 
-width:100%;
+background:white;
 
-border-radius:12px;
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.10);
+
+}
+
+.card h3{
+
+color:#0b3558;
+
+font-size:21px;
+
+}
+
+.card p{
+
+color:#666;
+
+line-height:1.6;
+
+}
+
+section{
+
+padding:55px 20px;
+
+text-align:center;
+
+}
+
+section h2{
+
+color:#0b3558;
+
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+@media(max-width:700px){
+
+.proyectos{
+
+grid-template-columns:1fr;
+
+}
+
+.servicios{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+nav a{
+
+display:inline-block;
+
+margin:5px;
+
+}
+}
+</style>
 
 </head>
 
 <body>
 
 <header>
-  <header>
 
-<img src="IMG_0908.jpeg" alt="Logo Construcciones GASA" style="width:180px;">
+<img src="IMG_0908.jpeg" alt="Logo Construcciones GASA">
 
 <h1>CONSTRUCCIONES GASA</h1>
 
-<p>Ingeniería Civil y Construcción</p>
+<p>Ingeniería Civil • Construcción • Remodelación</p>
 
 </header>
 
-<div class="hero">
+<nav>
 
-<h2>Construimos tus proyectos</h2>
+<a href="#inicio">INICIO</a>
 
-<p>Calidad y responsabilidad.</p>
+<a href="#proyectos">PROYECT
+<section id="proyectos">
 
-<a class="btn" href="https://wa.me/50583372962">WhatsApp</a>
+<h2>Nuestros Proyectos</h2>
+
+<p>
+
+Conoce algunos de nuestros trabajos realizados por Construcciones GASA.
+
+</p>
+
+<div class="proyectos">
+
+<div class="proyecto">
+
+<img src="IMG_0092_Original.jpeg" alt="Proyecto de Construcción">
+
+<h3>Proyecto de Construcción</h3>
+
+<p>Construcciones GASA</p>
 
 </div>
-  <section>
 
-<section class="proyectos">
+<div cl
+ass="proyecto">
 
-<img src="IMG_0092_Original.jpeg" style="width:90%;max-width:500px;">
+<img src="IMG_0093_Original.jpeg" alt="Proyecto Residencial">
 
-<img src="IMG_0093_Original.jpeg" style="width:90%;max-width:500px;">
+<h3>Proyecto Residencial</h3>
 
-<img src="IMG_0157.jpeg" style="width:90%;max-width:500px;">
+<p>Construcciones GASA</p>
 
-<img src="IMG_3003.jpeg" style="width:90%;max-width:500px;">
+</div>
 
-<img src="IMG_8166.jpeg" style="width:90%;max-width:500px;">
+<div class="proyecto">
 
+<img src="IMG_0157.jpeg" alt="Obra en Construcción">
+
+<h3>Obra en Construcción</h3>
+
+<p>Ingeniería y construcción</p>
+
+</div>
+
+<div class
+="proyecto">
+
+<img src="IMG_3003.jpeg" alt="Proyecto de Ingeniería">
+
+<h3>Proyecto de Ingeniería</h3>
+
+<p>Calidad y responsabilidad</p>
+
+</div>
+
+<div class="proyecto">
+
+<img src="IMG_8166.jpeg" alt="Proyecto GASA">
+
+<h3>Proyecto GASA</h3>
+
+<p>Diseño y construcción</p>
+
+</div>
+
+</div>
 </section>
-  <section>
+<section id="servicios">
 
 <h2>Nuestros Servicios</h2>
 
+<p>
+
+Ofrecemos soluciones profesionales para proyectos de construcción
+
+e ingeniería civil.
+
+</p>
+
+<div class="servicios">
+
 <div class="card">
 
-<h3>Construcción</h3>
+<h3>🏗️ Construcción</h3>
 
-<p>Viviendas y proyectos.</p>
+<p>
+
+Construcción de viviendas, edificios y diferentes tipos de proyectos.
+
+</p>
 
 </div>
 
 <div class="card">
 
-<h3>Ingeniería Civil</h3>
+<h3>📐 Ingeniería Civil</h3>
 
-<p>Diseño y supervisión.</p>
+<p>
 
-</div>
+Diseño, planificación y supervisión profesional de obras.
 
-<div class="card">
-
-<h3>Remodelaciones</h3>
-
-<p>Renovación de espacios.</p>
+</p>
 
 </div>
 
 <div class="card">
 
-<h3>Presupuestos</h3>
+<h3>🔨 Remodelaciones</h3>
 
-<p>Materiales y costos.</p>
+<p>
+
+Renovación y transformación de espacios residenciales y comerciales.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Presupuestos</h3>
+
+<p>
+
+Elaboración de presupuestos y cálculo de materiales para tu proyecto.
+
+</p>
+
+</div>
 
 </div>
 
 </section>
-  <section>
+<section id="contacto">
 
 <h2>Contáctanos</h2>
 
-<p>Residencial San Miguel, Managua</p>
+<p>
 
-<p>+505 8337-2962</p>
+¿Tienes un proyecto en mente?
 
-<a class="btn" href="https://wa.me/50583372962">WhatsApp</a>
+Estamos listos para ayudarte.
+
+</p>
+
+<p>📍 Residencial San Miguel, Managua</p>
+
+<p>📞 +505 8337-2962</p>
+
+<a class="btn" href="https://wa.me/50583372962">
+
+💬 ESCRÍBENOS POR WHATSAPP
+
+</a>
 
 </section>
 
 <footer>
 
-© 2026 Construcciones GASA
+<p><strong>CONSTRUCCIONES GASA</strong></p>
+
+<p>Ingeniería Civil • Construcción • Remodelación</p>
+
+<p>© 2026 Todos los derechos reservados</p>
 
 </footer>
 
 </body>
 
-</html
-  
+</html>
