@@ -27,23 +27,23 @@ scroll-behavior:smooth;
 body{
 
 margin:0;
+
 font-family:Arial,sans-serif;
 
-background:#f4f7fa;
+background:#f5f7fa;
 
 color:#18324a;
 
 }
-
 header{
 
-background:white;
+background:#ffffff;
 
 padding:25px 20px;
 
 text-align:center;
 
-box-shadow:0 2px 12px rgba(0,0,0,.10);
+box-shadow:0 2px 15px rgba(0,0,0,.10);
 
 }
 
@@ -51,7 +51,7 @@ header img{
 
 width:180px;
 
-max-width:80%;
+max-width:85%;
 
 height:auto;
 
@@ -59,21 +59,20 @@ height:auto;
 
 header h1{
 
-color:#0b3558;
-
-margin:10px 0 5px;
+margin:12px 0 5px;
 
 font-size:32px;
+
+color:#0b3558;
 
 }
 
 header p{
 
-color:#555;
-
 margin:5px;
 
-font-size:17px;
+font-size:17px
+color:#666;
 
 }
 
@@ -81,7 +80,7 @@ nav{
 
 background:#0b3558;
 
-padding:15px 10px;
+padding:14px 10px;
 
 text-align:center;
 
@@ -91,23 +90,21 @@ top:0;
 
 z-index:1000;
 
-box-shadow:0 3px 12px rgba(0,0,0,.20);
-
 }
 
 nav a{
+
+display:inline-block;
 
 color:white;
 
 text-decoration:none;
 
-margin:0 8px;
-
 font-weight:bold;
 
-display:inline-block;
+padding:9px 12px;
 
-padding:8px 10px;
+margin:3px;
 
 border-radius:6px;
 
@@ -118,18 +115,15 @@ nav a:hover{
 background:#17679b;
 
 }
+ .hero{
 
-.hero{
-
-background:linear-gradient(135deg,#0b3558,#17679b);
-
-color:white;
-
-text-align:center;
+min-height:520px;
 
 padding:90px 20px;
 
-min-height:460px;
+background:linear-gradient(135deg,#071f33,#17679b);
+
+color:white;
 
 display:flex;
 
@@ -139,13 +133,17 @@ justify-content:center;
 
 align-items:center;
 
+text-align:center;
+
 }
 
 .hero h2{
 
-font-size:42px;
+font-size:46px;
 
-margin:0 0 18px;
+max-width:800px;
+
+margin:0 0 20px;
 
 }
 
@@ -155,9 +153,9 @@ font-size:20px;
 
 max-width:700px;
 
-line-height:1.6;
+line-height:1.7;
 
-margin:0 auto 30px;
+margin:0 0 30px;
 
 }
 
@@ -169,21 +167,26 @@ background:#d9a928;
 
 color:white;
 
-padding:15px 28px;
-
-border-radius:8px;
-
 text-decoration:none;
 
 font-weight:bold;
 
-box-shadow:0 5px 15px rgba(0,0,0,.20);
+padding:16px 30px;
+
+border-radius:8px;
+
+box-shadow:0 5px 18px rgba(0,0,0,.25);
 
 }
 
-section{
+.btn:hover{
 
-padding:65px 20px;
+transform:translateY(-2px);
+
+}
+ section{
+
+padding:70px 20px;
 
 text-align:center;
 
@@ -191,9 +194,9 @@ text-align:center;
 
 section h2{
 
-color:#0b3558;
+font-size:34px;
 
-font-size:32px;
+color:#0b3558;
 
 margin-bottom:15px;
 
@@ -203,82 +206,55 @@ section > p{
 
 max-width:750px;
 
-margin:0 auto 20px;
+margin:0 auto 25px;
 
 line-height:1.7;
-
-}
-/* SOBRE NOSOTROS */
-
-.sobre{
-
-background:white;
-
-}
-
-.sobre-contenido{
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-.sobre-texto{
-
-font-size:18px;
-
-line-height:1.8;
 
 color:#555;
 
 }
 
-.destacados{
+.servicios{
 
 display:grid;
 
-grid-template-columns:repeat(3,1fr);
+grid-template-col
+ umns:repeat(2,1fr);
 
-gap:20px;
+gap:25px;
 
 max-width:1000px;
 
-margin:35px auto 0;
+margin:auto;
 
 }
 
-.destacado{
+.card{
 
-background:#f4f7fa;
+background:white;
 
-padding:25px 15px;
+padding:30px;
 
-border-radius:15px;
+border-radius:16px;
 
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+box-shadow:0 5px 20px rgba(0,0,0,.10);
 
 }
 
-.destacado h3{
+.card h3{
 
 color:#0b3558;
 
-font-size:20px;
-
-margin:10px 0;
-
 }
 
-.destacado p{
+.card p{
 
 color:#666;
 
-line-height:1.5;
+line-height:1.6;
 
 }
-
-.proyectos{
+ .proyectos{
 
 display:grid;
 
@@ -288,7 +264,7 @@ gap:25px;
 
 max-width:1100px;
 
-margin:35px auto 0;
+margin:35px auto;
 
 }
 
@@ -302,25 +278,19 @@ overflow:hidden;
 
 box-shadow:0 5px 18px rgba(0,0,0,.12);
 
-transition:transform .25s ease,box-shadow .25s ease;
-
-}
-
-.proyecto:hover{
-
-transform:translateY(-6px);
-
-box-shadow:0 12px 28px rgba(0,0,0,.18);
-
 }
 
 .proyecto img{
 
 width:100%;
 
-height:250px;
+height:280px;
 
-object-fit:cover;
+object-fit:contain;
+
+background:#f4f7fa;
+
+padding:8px;
 
 display:block;
 
@@ -332,8 +302,6 @@ color:#0b3558;
 
 margin:18px 10px 8px;
 
-font-size:21px;
-
 }
 
 .proyecto p{
@@ -341,64 +309,7 @@ font-size:21px;
 color:#666;
 
 margin:0 10px 20px;
-
-}
-
-.servicios{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:20px;
-
-max-width:950px;
-
-margin:35px auto 0;
-
-}
-
-.card{
-
-background:white;
-
-padding:30px 25px;
-
-border-radius:16px;
-
-box-shadow:0 5px 18px rgba(0,0,0,.10);
-
-transition:transform .25s ease,box-shadow .25s ease;
-
-}
-
-.card:hover{
-
-transform:translateY(-5px);
-
-box-shadow:0 12px 25px rgba(0,0,0,.17);
-
-}
-
-.card h3{
-
-color:#0b3558;
-
-font-size:21px;
-
-margin-top:0;
-
-}
-
-.card p{
-
-color:#666;
-
-line-height:1.6;
-
-}
-
-#contacto{
+ #contacto{
 
 background:#eef4f8;
 
@@ -408,7 +319,7 @@ background:#eef4f8;
 
 max-width:700px;
 
-margin:30px auto 0;
+margin:30px auto;
 
 background:white;
 
@@ -422,7 +333,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.10);
 
 footer{
 
-background:#0b3558;
+background:#071f33;
 
 color:white;
 
@@ -440,15 +351,23 @@ margin:8px;
 
 @media(max-width:700px){
 
+.hero{
+
+min-height:450px;
+
+padding:70px 20px;
+
+}
+
 .hero h2{
 
 font-size:32px;
 
 }
 
-.destacados{
+.hero p{
 
-grid-template-columns:1fr;
+font-size:18px;
 
 }
 
@@ -466,20 +385,22 @@ grid-template-columns:1fr;
 
 .proyecto img{
 
-height:230px;
+height:240px;
 
 }
 
 nav a{
 
-margin:4px;
+font-size:13px;
 
-font-size:14px;
+padding:8px;
+
+margin:3px;
 
 }
 
 }
-</style>
+ </style>
 
 </head>
 
@@ -498,14 +419,15 @@ font-size:14px;
 <nav>
 
 <a href="#inicio">INICIO</a>
-<a href="#proyectos">PROYECTOS</a>
 
-<a href="#servicios">SERVICIOS</a>
+<a href="#servicios">SERVICIOS</
+ <a href="#proyectos">PROYECTOS</a>
+
+<a href="#sobre">NOSOTROS</a>
 
 <a href="#contacto">CONTACTO</a>
 
 </nav>
-
 <section class="hero" id="inicio">
 
 <h2>Construimos tus proyectos</h2>
@@ -526,13 +448,11 @@ SOLICITA TU COTIZACIÓN
 
 </section>
 
-<section id="sobre" class="sobre">
+<section id="sobre">
 
 <h2>Sobre Construcciones GASA</h2>
 
-<div class="sobre-contenido">
-
-<p class="sobre-texto">
+<p>
 
 Somos una empresa dedicada a la ingeniería civil y la construcción,
 
@@ -540,7 +460,7 @@ comprometida con ofrecer soluciones de calidad para cada proyecto.
 
 </p>
 
-<p class="sobre-texto">
+<p>
 
 Trabajamos con responsabilidad, planificación y atención a cada detalle,
 
@@ -548,38 +468,7 @@ buscando que cada obra cumpla con las expectativas de nuestros clientes.
 
 </p>
 
-<div class="destacados">
-
-<div class="destacado">
-
-<h3>🏆 Calidad</h3>
-
-<p>Buscamos excelentes resultados en cada etapa de la obra.</p>
-
-</div>
-
-<div class="destacado">
-
-<h3>🤝 Responsabilidad</h3>
-
-<p>Cumplimos nuestros compromisos con nuestros clientes y proyectos.</p>
-
-</div>
-
-<div class="destacado">
-
-<h3>📐 Profesionalismo</h3>
-
-<p>Aplicamos conocimientos de ingeniería para desarrollar cada proyecto.</p>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
-
 <section id="proyectos">
 
 <h2>Nuestros Proyectos</h2>
@@ -601,7 +490,6 @@ Conoce algunos de nuestros trabajos realizados por Construcciones GASA.
 <p>Construcciones GASA</p>
 
 </div>
-
 <div class="proyecto">
 
 <img src="IMG_0093_Original.jpeg" alt="Proyecto Residencial">
@@ -610,9 +498,8 @@ Conoce algunos de nuestros trabajos realizados por Construcciones GASA.
 
 <p>Construcciones GASA</p>
 
-</div>
-
-<div class="proyecto">
+</div 
+ <div class="proyecto">
 
 <img src="IMG_0157.jpeg" alt="Obra en Construcción">
 
@@ -631,7 +518,6 @@ Conoce algunos de nuestros trabajos realizados por Construcciones GASA.
 <p>Calidad y responsabilidad</p>
 
 </div>
-
 <div class="proyecto">
 
 <img src="IMG_8166.jpeg" alt="Proyecto GASA">
@@ -645,7 +531,7 @@ Conoce algunos de nuestros trabajos realizados por Construcciones GASA.
 </div>
 
 </section>
-<section id="servicios">
+ <section id="servicios">
 
 <h2>Nuestros Servicios</h2>
 
@@ -670,7 +556,6 @@ Construcción de viviendas, edificios y diferentes tipos de proyectos.
 </p>
 
 </div>
-
 <div class="card">
 
 <h3>📐 Ingeniería Civil</h3>
@@ -690,14 +575,12 @@ Diseño, planificación y supervisión profesional de obras.
 <p>
 
 Renovación y transformación de espacios residenciales y comerciales.
- y transformación de espacios residenciales y comerciales.
 
 </p>
 
 </div>
 
 <div class="card">
-
 <h3>📊 Presupuestos</h3>
 
 <p>
@@ -711,8 +594,7 @@ Elaboración de presupuestos y cálculo de materiales para tu proyecto.
 </div>
 
 </section>
-
-<section id="contacto">
+ <section id="contacto">
 
 <h2>Contáctanos</h2>
 
@@ -738,13 +620,14 @@ Estamos listos para ayudarte.
 
 </div>
 
-</section>
-
-<footer>
+</section
+ <footer>
 
 <p><strong>CONSTRUCCIONES GASA</strong></p>
 
 <p>Ingeniería Civil • Construcción • Remodelación</p>
+
+<p>📞 +505 8337-2962</p>
 
 <p>© 2026 Todos los derechos reservados</p>
 
